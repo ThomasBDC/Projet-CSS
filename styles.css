@@ -1,0 +1,76 @@
+#titrePrincipal{
+    color:red;
+    font-weight: lighter;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.alenvers{
+    transform: rotate(180deg);
+}
+
+.textDeMiseEnValeur{
+    font-weight: bold;
+}
+
+p .textDeMiseEnValeur{
+    color:green;
+}
+
+nav .lienMenu{
+    display: INLINE-BLOCK;
+    background-color: lightgray;
+    height: 50px;
+    width: 150px;
+    padding: 15px;
+    border: solid black 5px;
+    margin: 15px;
+}
+
+.relativeDessus{
+    opacity: 0.7;
+}
+
+.chaventure {
+    display: flex;
+    justify-content: space-around;
+
+    /* grand écran*/
+    flex-direction: row;
+
+    /* petit écran*/
+    flex-direction: column; 
+}
+/* si l'appareil reponds oui à cette condition, alors applique ce code CSS      */
+@media (min-width : 600px) and (max-width : 1200px) {
+    .chaventure{
+        background-color: brown;
+    }
+
+    .chaventure article{
+        color: white;
+    }
+} 
+
+.chaventure article{
+    margin:30px;
+}
+
+.divTailleAbsolu{
+   background-color: wheat; 
+   height: 100px;
+   width: 100px;
+}
+
+.divTailleRelative{
+    font-size: 12px;
+   background-color: turquoise; 
+   height: 5em;
+   width: 5em;
+}
+
+.hide{
+    display:none !important;
+}
